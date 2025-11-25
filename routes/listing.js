@@ -17,7 +17,7 @@ const upload = multer({ storage});
 //         next();
 //           }
 //   }
-
+ 
 router.route("/")
 .get( wrapAsync(listingController.index))
 .post(isLoggedIn,
